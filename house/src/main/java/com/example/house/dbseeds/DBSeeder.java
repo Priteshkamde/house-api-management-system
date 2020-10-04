@@ -31,7 +31,7 @@ public class DBSeeder implements CommandLineRunner {
         List<Home> homeList = Arrays.asList(home1,home2,home3);
         homeRepository.saveAll(homeList);
 
-        System.out.println("\t \t DB Initialized ");
+        System.out.println("\t \t DB Initialization Done ");
 
     }
 }
