@@ -1,4 +1,4 @@
-## House Information System :house_with_garden:
+## House Information System
 > Tech Stack
 - [x] REST APIs 
 - [x] SpringBoot 
