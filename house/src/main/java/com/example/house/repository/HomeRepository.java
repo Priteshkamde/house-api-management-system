@@ -7,7 +7,6 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 import java.util.Optional;
 
-// DAO contacts DB each time
 
 @Repository
 public interface HomeRepository extends MongoRepository<Home, String> {

@@ -59,7 +59,7 @@ public class HomeController {
     }
 
     @GetMapping(value = "/maxarea")
-    public List<Home> getByHomeArea(){
+    public List<Home> getByHomeArea() {
         List<Home> homeList = homeService.findAllByOrderByHomeAreaDesc();
         return homeList;
     }

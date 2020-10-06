@@ -66,7 +66,6 @@ class HomeControllerTest {
         mockMvc.perform(get("/house/all")).andDo(print())
 
                 .andExpect(status().isOk())
-                // json response capture
                 .andExpect(jsonPath("$", hasSize(2)));
 
     }
@@ -79,7 +78,6 @@ class HomeControllerTest {
         mockMvc.perform(get("/house/homename/{name}", homeObject1.getHomeName())
                 .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
-                // json response capture
                 .andExpect(
                         jsonPath(
                                 "$.homeName", is(homeObject1.getHomeName())
